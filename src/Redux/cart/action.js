@@ -4,14 +4,14 @@ import {
   INCREASE_QUANTITY,
   DECREASE_QUANTITY,
 } from "./actionType";
-export const addTOCart = (product) => {
+export const addToCart = (product) => {
   return {
     type: ADD_TO_CART,
     payload: product,
   };
 };
 
-export const removeFromcart = (productId) => {
+export const removeFromCart = (productId) => {
   return {
     type: REMOVE_FROM_CART,
     payload: productId,

@@ -8,7 +8,7 @@ const pageReducer = (state = initialState, action) => {
     case "HOME":
       return { home: true };
     case "CART":
-      return { CART: false };
+      return { home: false };
     default:
       return state;
   }

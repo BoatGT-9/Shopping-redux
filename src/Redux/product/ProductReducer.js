@@ -1,6 +1,6 @@
 import { ADD_PRODUCT, ADD_QUANTITY, REMOVE_QUANTITY } from "./actionType";
 
-import {initialState} from "./initialState"
+import { initialState } from "./initialState";
 
 const nextId = (items) => {
     return items.reduce((id, item) => Math.max(id,item.id), -1) + 1;
@@ -15,7 +15,7 @@ const productReducer = (state = initialState, action) => {
                     id: nextId(state),
                     ...action.payload,
                     price: parseFloat(action.payload.price),
-                    quantity: parseInt(action.payload.quantity)
+                    Quantity: parseInt(action.payload.Quantity)
                 }
             ];
         case ADD_QUANTITY:
@@ -23,7 +23,7 @@ const productReducer = (state = initialState, action) => {
                 if (product.id === action.payload.productId) {
                     return {
                         ...product,
-                        quantity: product.quantity + action.payload.quantity
+                        Quantity: product.Quantity + action.payload.Quantity
                     }
                 } else {
                     return product;
@@ -34,7 +34,7 @@ const productReducer = (state = initialState, action) => {
                 if (product.id === action.payload) {
                     return {
                         ...product,
-                        quantity: product.quantity - 1
+                        Quantity: product.Quantity - 1
                     }
                 } else {
                     return product

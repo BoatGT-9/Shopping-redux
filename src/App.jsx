@@ -1,16 +1,14 @@
 
-// import NavBar from './components/NavBar'
+import NavBar from './components/Navbar'
 import './App.css'
-import Page from './components/Page'
+import Page from './pages/Page'
 import { Provider } from 'react-redux'
 import { Store } from './Redux/store'
 
 function App() {
- 
-
   return (
     <Provider store={Store}>
-       {/* <NavBar/> */}
+       <NavBar/>
        <Page/>
     </Provider>
   )

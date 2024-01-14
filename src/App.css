@@ -1,6 +1,8 @@
 body{
   background-image: url('https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWluaW1hbCUyMHdoaXRlJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D');
   height: 100%;
+  margin: 0;
+  padding: 0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,6 +10,8 @@ body{
 
 
 /* Product Input Form */
+
+
 
 .formContainer {
   overflow: hidden;
@@ -154,8 +158,6 @@ body{
   font-weight: 700;
 }
 
-/* Bill Details */
-
 .billDetailsCard {
   margin-left: auto;
   margin-right: auto;
@@ -216,8 +218,4 @@ body{
 
 #lws-cart{
   cursor: pointer;
-}
-
-span{
-  color: red;
 }
